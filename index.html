@@ -1,768 +1,198 @@
 <!DOCTYPE html>
 <html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <head>
-        <meta charset="utf-8">
-        <title>Sagini - Proffessional Website</title>
-        <meta content="width=device-width, initial-scale=1.0" name="viewport">
-        <meta content="" name="keywords">
-        <meta content="" name="description">
+    <title>Isaac Sagini | Technology, Consulting & Research</title>
+    <meta name="description" content="Explore Isaac Sagini's professional portfolio in software development, information technology, consulting, data analysis and research.">
+    <meta name="author" content="Isaac Sagini">
+    <meta name="theme-color" content="#101827">
 
-        <!-- Google Web Fonts -->
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet"> 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 
-        <!-- Icon Font Stylesheet -->
-        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"/>
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
 
-        <!-- Libraries Stylesheet -->
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
-        <link href="lib/animate/animate.min.css" rel="stylesheet">
-        <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
-        <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
+    <style>
+        :root {
+            --ink: #101827;
+            --ink-soft: #19263a;
+            --accent: #0891b2;
+            --accent-light: #cffafe;
+            --paper: #ffffff;
+            --surface: #f4f7fb;
+            --muted: #64748b;
+            --line: #e2e8f0;
+            --radius: 18px;
+            --shadow: 0 18px 50px rgba(16, 24, 39, .08);
+        }
 
+        * { box-sizing: border-box; }
 
-        <!-- Customized Bootstrap Stylesheet -->
-        <link href="css/bootstrap.min.css" rel="stylesheet">
+        html { scroll-behavior: smooth; scroll-padding-top: 90px; }
 
-        <!-- Template Stylesheet -->
-        <link href="css/style.css" rel="stylesheet">
-    </head>
+        body {
+            margin: 0;
+            background: var(--paper);
+            color: var(--ink);
+            font-family: "DM Sans", sans-serif;
+            line-height: 1.75;
+        }
 
-    <body>
+        h1, h2, h3, h4, h5, .brand {
+            font-family: "Manrope", sans-serif;
+            letter-spacing: -.035em;
+        }
 
-        <!-- Spinner Start -->
-        <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
-            <div class="spinner-border text-primary" style="width: 3rem; height: 3rem;" role="status">
-                <span class="sr-only">Loading...</span>
-            </div>
-        </div>
-        <!-- Spinner End -->
+        a { text-decoration: none; }
 
+        .site-header {
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            background: rgba(255,255,255,.96);
+            backdrop-filter: blur(14px);
+            border-bottom: 1px solid var(--line);
+        }
 
-        <!-- Topbar Start -->
-        <div class="container-fluid topbar px-0 d-none d-lg-block">
-            <div class="container px-0">
-                <div class="row gx-0 align-items-center" style="height: 45px;">
-                    <div class="col-lg-8 text-center text-lg-start mb-lg-0">
-                        <div class="d-flex flex-wrap">
-                            <a href="#" class="text-muted me-4"><i class="fas fa-map-marker-alt text-primary me-2"></i>Find A Location</a>
-                            <a href="#" class="text-muted me-4"><i class="fas fa-phone-alt text-primary me-2"></i>+254704827257</a>
-                            <a href="#" class="text-muted me-0"><i class="fas fa-envelope text-primary me-2"></i>sagntechsolutions@outlook.com</a>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 text-center text-lg-end">
-                        <div class="d-flex align-items-center justify-content-end">
-                            <a class="btn btn-light btn-md-square me-2" href="https://www.facebook.com/brian.isaac.7547" target="_blank">
-                                <i class="fab fa-facebook-f"></i>
-                            </a>
-                            <a class="btn btn-light btn-md-square me-2" href="https://x.com/sagini17?t=M5DrH4OIqUUB_RFzk6wMEQ&s=08" target="_blank">
-                                <i class="fab fa-twitter"></i>
-                            </a>
-                            <a class="btn btn-light btn-md-square me-2" href="https://t.me/sagnibrian" target="_blank">
-                                <i class="fab fa-instagram"></i>
-                            </a>
-                            <a class="btn btn-light btn-md-square me-0" href="https://www.linkedin.com/in/isaac-sagini-9318072b8" target="_blank">
-                                <i class="fab fa-linkedin-in"></i>
-                            </a>
-                            <a class="btn btn-light btn-md-square me-0" href="https://t.me/Isaacsagin" target="_blank">
-                                <i class="fab fa-telegram-plane"></i>
-                            </a>
-                            
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- Topbar End -->
+        .brand {
+            color: var(--ink);
+            font-size: 1.25rem;
+            font-weight: 800;
+            letter-spacing: -.05em;
+        }
 
+        .brand span { color: var(--accent); }
 
-        <!-- Navbar & Hero Start -->
-        <div class="container-fluid sticky-top px-0">
-            <div class="position-absolute bg-dark" style="left: 0; top: 0; width: 100%; height: 100%;">
-            </div>
-            <div class="container px-0">
-                <nav class="navbar navbar-expand-lg navbar-dark bg-white py-3 px-4">
-                    <a href="index.html" class="navbar-brand p-0">
-                        <h1 class="text-primary m-0">SagnTech Solutions</h1>
-                        <!-- <img src="img/logo.png" alt="Logo"> -->
-                    </a>
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
-                        <span class="fa fa-bars"></span>
-                    </button>
-                    <div class="collapse navbar-collapse" id="navbarCollapse">
-                        <div class="navbar-nav ms-auto py-0">
-                            <a href="index.html" class="nav-item nav-link active">Home</a>
-                            <a href="about.html" class="nav-item nav-link">About</a>
-                            <a href="service.html" class="nav-item nav-link">Services</a>
-                            <a href="project.html" class="nav-item nav-link">Projects</a>
-                            <div class="nav-item dropdown">
-                                <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Pages</a>
-                                <div class="dropdown-menu m-0">
-                                    <a href="blog.html" class="dropdown-item">My Blog</a>
-                                    
-                                    <a href="testimonial.html" class="dropdown-item">Testimonial</a>
-                                    <a href="faqs.html" class="dropdown-item">FAQs</a>
-                                    <a href="404.html" class="dropdown-item">404 Page</a>
-                                </div>
-                            </div>
-                            <a href="contact.html" class="nav-item nav-link">Contact</a>
-                        </div>
+        .navbar { padding: 16px 0; }
 
-                        <button class="btn btn-primary btn-md-square mx-2" data-bs-toggle="modal" data-bs-target="#searchModal"><i class="fas fa-search"></i></button>
-                        
-                    </div>
-                </nav>
-            </div>
-        </div>
-        <!-- Navbar & Hero End -->
+        .navbar-nav .nav-link {
+            color: #475569;
+            font-size: .93rem;
+            font-weight: 600;
+            padding: 10px 13px !important;
+        }
 
-        <!-- Modal Search Start -->
-        <div class="modal fade" id="searchModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-            <div class="modal-dialog modal-fullscreen">
-                <div class="modal-content rounded-0">
-                    <div class="modal-header">
-                        <h4 class="modal-title mb-0" id="exampleModalLabel">Search by keyword</h4>
-                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                    </div>
-                    <div class="modal-body d-flex align-items-center">
-                        <div class="input-group w-75 mx-auto d-flex">
-                            <input type="search" class="form-control p-3" placeholder="keywords" aria-describedby="search-icon-1">
-                            <span id="search-icon-1" class="input-group-text p-3"><i class="fa fa-search"></i></span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- Modal Search End -->
+        .navbar-nav .nav-link:hover,
+        .navbar-nav .nav-link.active { color: var(--accent); }
 
-        <!-- Carousel Start -->
-        <div class="header-carousel owl-carousel">
-            <div class="header-carousel-item">
-                <div class="header-carousel-item-img-1">
-                    <img src="img/carousel-1.jpg" class="img-fluid w-100" alt="Image">
-                </div>
-                <div class="carousel-caption">
-                    <div class="carousel-caption-inner text-start p-3">
-                        <h1 class="display-1 text-capitalize text-white mb-4 fadeInUp animate__animated" data-animation="fadeInUp" data-delay="1.3s" style="animation-delay: 1.3s;">Looking for Full-Stack Web Development Expertise?</h1>
-                        <p class="mb-5 fs-5 fadeInUp animate__animated" data-animation="fadeInUp" data-delay="1.5s" style="animation-delay: 1.5s;">I build responsive, dynamic websites using HTML, CSS, JavaScript, and frameworks like React, Django, and Node.js.
-                             I specialize in customizing websites, including WordPress and e-commerce platforms, to meet specific client needs. From front-end interfaces to back-end systems, I offer comprehensive development solutions, including API integration and database management with PostgreSQL and PHP. 
-                            I manage the full development cycle from concept to deployment.
+        .btn-main {
+            display: inline-flex;
+            justify-content: center;
+            align-items: center;
+            gap: 9px;
+            padding: 13px 21px;
+            border: 1px solid var(--accent);
+            border-radius: 9px;
+            background: var(--accent);
+            color: white;
+            font-weight: 700;
+            transition: .2s ease;
+        }
 
-                        </p>
-                        
-                    </div>
-                </div>
-            </div>
-            <div class="header-carousel-item">
-                <div class="header-carousel-item-img-3">
-                    <img src="img/carousel-2.jpg" class="img-fluid w-100" alt="Image">
-                </div>
-                <div class="carousel-caption">
-                    <div class="carousel-caption-inner text-end p-3">
-                        <h1 class="display-1 text-capitalize text-white mb-4">Need a Programmer Skilled in Multiple Languages and Frameworks?</h1>
-                        <p class="mb-5 fs-5" style="text-align: left;">I will help you with solutions on Java, C++, JavaScript, C, PHP, Visual basic, and Python, with expertise in frameworks like Django and React. 
-                            I work with databases such as PostgreSQL and MySQL and have experience with content management systems (CMS) like WordPress. 
-                            Additionally, I specialize in RESTful APIs, version control with Git, and scalable software solutions across various technologies.
-                
-                    </div>
-                </div>
-            </div>
-            <div class="header-carousel-item mx-auto">
-                <div class="header-carousel-item-img-2">
-                    <img src="img/carousel-3.jpg" class="img-fluid w-100" alt="Image">
-                </div>
-                <div class="carousel-caption">
-                    <div class="carousel-caption-inner text-center p-3">
-                        <h1 class="display-1 text-capitalize text-white mb-4">Looking for Academic Research & Tutoring Services?</h1>
-                        <p class="mb-5 fs-5" style="text-align: left;"> I provide academic writing and tutoring in Finance, Economics, Computer Science, Accounting, Nursing, Excel, Coding Assignments, and more. 
-                            I handle thesis projects, research proposals, essays, and case studies. All content is plagiarism-free and AI-free, ensuring original work that guarantees good grades. 
-                            I'm also readily available for revisions and adjustments as needed.
-                        </p>
-                        
-                    </div>
-                </div>
-            </div>
-            
-            <div class="header-carousel-item">
-                <div class="header-carousel-item-img-3">
-                    <img src="img/carousel-4.jpg" class="img-fluid w-100" alt="Image">
-                </div>
-                <div class="carousel-caption">
-                    <div class="carousel-caption-inner text-end p-3">
-                        <h1 class="display-1 text-capitalize text-white mb-4">Need Consultation on Web Development or Academic Projects?</h1>
-                        <p class="mb-5 fs-5" style="text-align: left;">I offer free consultation and guidance tailored to your specific needs. 
-                            Consultation services include expert advice on web development, website design, digital strategies, and content development. For academic projects, I provide insights into research methodologies. 
-                            My goal is to deliver practical, actionable advice that ensures your success in both business and academics.
-                
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- Carousel End -->
+        .btn-main:hover {
+            background: #0e7490;
+            border-color: #0e7490;
+            color: white;
+            transform: translateY(-2px);
+        }
 
+        .btn-outline-main {
+            background: transparent;
+            border: 1px solid #cbd5e1;
+            color: var(--ink);
+        }
 
-        <!-- About Start -->
-        <div class="container-fluid about bg-light py-5">
-            <div class="container py-5">
-                <div class="row g-5 align-items-center">
-                    <div class="col-lg-6 col-xl-5 wow fadeInLeft" data-wow-delay="0.1s">
-                        <div class="about-img">
-                            
-                            <img src="img/about-2.jpg" class="img-fluid w-100 rounded-bottom" alt="Image">
-                        </div>
-                    </div>
-                    <div class="col-lg-6 col-xl-7 wow fadeInRight" data-wow-delay="0.3s">
-                        <h4 class="text-primary">About Me</h4>
-                        <h1 class="display-5 mb-4">Empowering Through Innovative Freelancing Solutions: Bridging Technology and Expertise</h1>
-                        <p class="text ps-4 mb-4">I am dedicated to providing you with high-quality services that are tailored to meet your unique needs. 
-                            My commitment to excellence and innovation ensures that I deliver effective solutions designed to foster growth and drive success. 
-                            Your satisfaction is my top priority, and I look forward to the opportunity to support you in achieving your goals
-                        <div class="row g-4 justify-content-between mb-5">
-                            <div class="col-lg-6 col-xl-5">
-                                <p class="text-dark"><i class="fas fa-check-circle text-primary me-1"></i> Web Development</p>
-                                <p class="text-dark mb-0"><i class="fas fa-check-circle text-primary me-1"></i> Programming</p>
-                            </div>
-                            <div class="col-lg-6 col-xl-7">
-                                <p class="text-dark"><i class="fas fa-check-circle text-primary me-1"></i> Consultation</p>
-                                <p class="text-dark mb-0"><i class="fas fa-check-circle text-primary me-1"></i> Academic Research & Tutoring</p>
-                            </div>
-                        </div>
-                        <div class="row g-4 justify-content-between mb-5">
-                            <div class="col-xl-7 mb-5">
-                                <div class="about-customer d-flex position-relative">
-                                    <div class="d-flex align-items-center flex-nowrap pt-xl-0">
-                                        <a href="cv.docx" class="btn btn-primary rounded-pill text-white py-2 px-4 ms-2 flex-wrap flex-sm-shrink-0">Download Resume</a>
-                                    </div>
-                                    <div class="d-flex align-items-center flex-nowrap pt-xl-0">
-                                        <a href="cv.docx" class="btn btn-primary rounded-pill text-white py-2 px-4 ms-2 flex-wrap flex-sm-shrink-0">Download CV</a>
-                                    </div>
-                                    <div class="position-absolute text-dark" style="left: 220px; top: 10px;">
-                                    </div>
-                                    <div class="position-absolute text-dark" style="left: 220px; top: 10px;">
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        
-                        <div class="row g-4 text-center align-items-center justify-content-center">
-                            <div class="col-sm-4">
-                                <div class="bg-primary rounded p-4">
-                                    <div class="d-flex align-items-center justify-content-center">
-                                        <span class="counter-value fs-1 fw-bold text-dark" data-toggle="counter-up">32</span>
-                                        <h4 class="text-dark fs-1 mb-0" style="font-weight: 600; font-size: 25px;">k+</h4>
-                                    </div>
-                                    <div class="w-100 d-flex align-items-center justify-content-center">
-                                        <p class="text-white mb-0">Project Complete</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-sm-4">
-                                <div class="bg-dark rounded p-4">
-                                    <div class="d-flex align-items-center justify-content-center">
-                                        <span class="counter-value fs-1 fw-bold text-white" data-toggle="counter-up">5</span>
-                                        <h4 class="text-white fs-1 mb-0" style="font-weight: 600; font-size: 25px;">+</h4>
-                                    </div>
-                                    <div class="w-100 d-flex align-items-center justify-content-center">
-                                        <p class="mb-0">Years Of Experience</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-sm-4">
-                                <div class="bg-primary rounded p-4">
-                                    <div class="d-flex align-items-center justify-content-center">
-                                        <span class="counter-value fs-1 fw-bold text-dark" data-toggle="counter-up">20</span>
-                                        <h4 class="text-dark fs-1 mb-0" style="font-weight: 600; font-size: 25px;">k+</h4>
-                                    </div>
-                                    <div class="w-100 d-flex align-items-center justify-content-center">
-                                        <p class="text-white mb-0">Trusted Global Clients</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- About End -->
+        .btn-outline-main:hover {
+            background: var(--ink);
+            color: white;
+            border-color: var(--ink);
+        }
 
+        .hero {
+            position: relative;
+            overflow: hidden;
+            background:
+                radial-gradient(ellipse at 85% 15%, rgba(8,145,178,.19), transparent 34%),
+                linear-gradient(135deg, #101827 0%, #17263b 70%, #102b3b 100%);
+            color: white;
+            padding: 105px 0 100px;
+        }
 
-<!-- Services Start -->
-<div class="container-fluid service py-5">
-    <div class="container py-5">
-        <div class="text-center mx-auto pb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 800px;">
-            <h4 class="text-primary">My Services</h4>
-            <h1 class="display-4"> Offering the Best Consulting & Fleelancing Services</h1>
-        </div>
-        <div class="row g-4 justify-content-center text-center">
-            <div class="col-md-6 col-lg-4 col-xl-3 wow fadeInUp" data-wow-delay="0.1s">
-                <div class="service-item bg-light rounded">
-                    <div class="service-img">
-                        <img src="img/service-1.jpg" class="img-fluid w-100 rounded-top" alt="">
-                    </div>
-                    <div class="service-content text-center p-4">
-                        <div class="service-content-inner">
-                            <p class="h4 mb-4 d-inline-flex text-start"> Web Design & Development</a>
-                            <p class="mb-4" style="text-align: left;">
-                                I offer professional web design and development services, creating visually appealing and user-friendly websites tailored to your needs. My expertise includes responsive design and e-commerce solutions to enhance your online presence.
-                            </p>
-                            
+        .hero::after {
+            content: "";
+            position: absolute;
+            width: 380px;
+            height: 380px;
+            right: -150px;
+            bottom: -220px;
+            border: 1px solid rgba(103,232,249,.22);
+            border-radius: 50%;
+            box-shadow: 0 0 0 45px rgba(103,232,249,.025),
+                        0 0 0 90px rgba(103,232,249,.025);
+            pointer-events: none;
+        }
 
+        .hero-content { position: relative; z-index: 1; }
 
+        .eyebrow {
+            display: inline-flex;
+            align-items: center;
+            gap: 9px;
+            color: #67e8f9;
+            text-transform: uppercase;
+            letter-spacing: .13em;
+            font-size: .76rem;
+            font-weight: 800;
+        }
 
+        .eyebrow::before {
+            content: "";
+            display: inline-block;
+            width: 25px;
+            height: 2px;
+            background: currentColor;
+        }
 
-                            </p>
-                            
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-6 col-lg-4 col-xl-3 wow fadeInUp" data-wow-delay="0.3s">
-                <div class="service-item bg-light rounded">
-                    <div class="service-img">
-                        <img src="img/service-2.jpg" class="img-fluid w-100 rounded-top" alt="">
-                    </div>
-                    <div class="service-content text-center p-4">
-                        <div class="service-content-inner">
-                            <p class="h4 mb-4 d-inline-flex text-start"> Programming in Various Languages</p>
-                            <p class="mb-4" style="text-align: left;">I offer professional programming services in Python, JavaScript, C, C++, Java, Django, and WordPress. I create custom websites, web applications, and software solutions, ensuring functionality, scalability, and user-friendly design tailored to your needs.
-                            </p>
-                           
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-6 col-lg-4 col-xl-3 wow fadeInUp" data-wow-delay="0.5s">
-                <div class="service-item bg-light rounded">
-                    <div class="service-img">
-                        <img src="img/service-4.jpg" class="img-fluid w-100 rounded-top" alt="">
-                    </div>
-                    <div class="service-content text-center p-4">
-                        <div class="service-content-inner">
-                            <p class="h4 mb-4 d-inline-flex text-start"> Academic Research & Tutoring</a>
-                            <p class="mb-4" style="text-align: left;">I provide expert academic research and tutoring services, specializing in tailored support for assignments, essays, and research projects. My services include in-depth analysis, structured writing, and personalized tutoring to help you excel academically.
-                            </p>
-                          
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-6 col-lg-4 col-xl-3 wow fadeInUp" data-wow-delay="0.7s">
-                <div class="service-item bg-light rounded">
-                    <div class="service-img">
-                        <img src="img/service-3.jpg" class="img-fluid w-100 rounded-top" alt="">
-                    </div>
-                    <div class="service-content text-center p-4">
-                        <div class="service-content-inner">
-                            <a href="#" class="h4 mb-4 d-inline-flex text-start">Expert Consultation & Guidance</a>
-                            <p class="mb-4" style="text-align: left;">I offer free consultation services to discuss your needs and goals. Whether you seek guidance in web development, programming, academic research or anything, I provide expert insights and recommendations to help you achieve success.
-                            </p>
-                          
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-12">
-                <a class="btn btn-primary rounded-pill py-3 px-5 wow fadeInUp" data-wow-delay="0.1s" href="contact.html">Contact me for More</a>
-            </div>
-        </div>
-    </div>
-</div>
-<!-- Services End -->
+        .hero h1 {
+            max-width: 800px;
+            margin: 23px 0;
+            font-size: clamp(2.65rem, 5.5vw, 5rem);
+            font-weight: 800;
+            line-height: 1.09;
+            color: white;
+        }
 
+        .hero h1 span { color: #67e8f9; }
 
-        <!-- Project Start -->
-        <div class="container-fluid project">
-            <div class="container">
-                <div class="text-center mx-auto pb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 800px;">
-                    <h4 class="text-primary">My Projects</h4>
-                    <h1 class="display-4">Explore My Latest Projects</h1>
-                </div>
-                <div class="project-carousel owl-carousel wow fadeInUp" data-wow-delay="0.1s">
-                    <div class="project-item h-100 wow fadeInUp" data-wow-delay="0.1s">
-                        <div class="project-img">
-                            <img src="img/projects-1.jpg" class="img-fluid w-100 rounded" alt="Image">
-                        </div>
-                        <div class="project-content bg-light rounded p-4">
-                            <div class="project-content-inner">
-                                <div class="project-icon mb-3"><i class="fas fa-chart-line fa-4x text-primary"></i></div>
-                                <p class="text-dark fs-5 mb-3">Business Growth</p>
-                                <a href="#" class="h4">Business Strategy And Investment Planning Growth Consulting</a>
-                                <div class="pt-4">
-                                    <a class="btn btn-light rounded-pill py-3 px-5" href="#">Read More</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="project-item h-100 wow fadeInUp" data-wow-delay="0.3s">
-                        <div class="project-img">
-                            <img src="img/projects-1.jpg" class="img-fluid w-100 rounded" alt="Image">
-                        </div>
-                        <div class="project-content bg-light rounded p-4">
-                            <div class="project-content-inner">
-                                <div class="project-icon mb-3"><i class="fas fa-signal fa-4x text-primary"></i></div>
-                                <p class="text-dark fs-5 mb-3">Marketing Strategy</p>
-                                <a href="#" class="h4">Product Sailing Marketing Strategy For Improve Business</a>
-                                <div class="pt-4">
-                                    <a class="btn btn-light rounded-pill py-3 px-5" href="#">Read More</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="project-item h-100">
-                        <div class="project-img">
-                            <img src="img/projects-1.jpg" class="img-fluid w-100 rounded" alt="Image">
-                        </div>
-                        <div class="project-content bg-light rounded p-4">
-                            <div class="project-content-inner">
-                                <div class="project-icon mb-3"><i class="fas fa-signal fa-4x text-primary"></i></div>
-                                <p class="text-dark fs-5 mb-3">Marketing Strategy</p>
-                                <a href="#" class="h4">Product Sailing Marketing Strategy For Improve Business</a>
-                                <div class="pt-4">
-                                    <a class="btn btn-light rounded-pill py-3 px-5" href="#">Read More</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- Project End -->
+        .hero-description {
+            max-width: 660px;
+            color: #cbd5e1;
+            font-size: 1.1rem;
+            line-height: 1.9;
+        }
 
+        .hero-actions {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 12px;
+            margin-top: 30px;
+        }
 
-        <!-- Blog Start -->
-        <div class="container-fluid blog pb-5">
-            <div class="container pb-5">
-                <div class="text-center mx-auto pb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 800px;">
-                    <h4 class="text-primary">My Blogs</h4>
-                    <h1 class="display-4">Latest Articles & News from the Blogs</h1>
-                </div>
-                <div class="row g-4 justify-content-center">
-                    <div class="col-md-6 col-lg-6 col-xl-4 wow fadeInUp" data-wow-delay="0.1s">
-                        <div class="blog-item bg-light rounded p-4" style="background-image: url(img/bg.png);">
-                            <div class="mb-4">
-                                <h4 class="text-primary mb-2">Investment</h4>
-                                <div class="d-flex justify-content-between">
-                                    <p class="mb-0"><span class="text-dark fw-bold">On</span> Mar 14, 2024</p>
-                                    <p class="mb-0"><span class="text-dark fw-bold">By</span> Mark D. Brock</p>
-                                </div>
-                            </div>
-                            <div class="project-img">
-                                <img src="img/blog-1.jpg" class="img-fluid w-100 rounded" alt="Image">
-                                <div class="blog-plus-icon">
-                                    <a href="img/blog-1.jpg" data-lightbox="blog-1" class="btn btn-primary btn-md-square rounded-pill"><i class="fas fa-plus fa-1x"></i></a>
-                                </div>
-                            </div>
-                            <div class="my-4">
-                                <a href="#" class="h4">Revisiting Your Investment & Distribution Goals</a>
-                            </div>
-                            <a class="btn btn-primary rounded-pill py-2 px-4" href="#">Explore More</a>
-                        </div>
-                    </div>
-                    <div class="col-md-6 col-lg-6 col-xl-4 wow fadeInUp" data-wow-delay="0.3s">
-                        <div class="blog-item bg-light rounded p-4" style="background-image: url(img/bg.png);">
-                            <div class="mb-4">
-                                <h4 class="text-primary mb-2">Business</h4>
-                                <div class="d-flex justify-content-between">
-                                    <p class="mb-0"><span class="text-dark fw-bold">On</span> Mar 14, 2024</p>
-                                    <p class="mb-0"><span class="text-dark fw-bold">By</span> Mark D. Brock</p>
-                                </div>
-                            </div>
-                            <div class="project-img">
-                                <img src="img/blog-2.jpg" class="img-fluid w-100 rounded" alt="Image">
-                                <div class="blog-plus-icon">
-                                    <a href="img/blog-2.jpg" data-lightbox="blog-2" class="btn btn-primary btn-md-square rounded-pill"><i class="fas fa-plus fa-1x"></i></a>
-                                </div>
-                            </div>
-                            <div class="my-4">
-                                <a href="#" class="h4">Dimensional Fund Advisors Interview with Director</a>
-                            </div>
-                            <a class="btn btn-primary rounded-pill py-2 px-4" href="#">Explore More</a>
-                        </div>
-                    </div>
-                    <div class="col-md-6 col-lg-6 col-xl-4 wow fadeInUp" data-wow-delay="0.5s">
-                        <div class="blog-item bg-light rounded p-4" style="background-image: url(img/bg.png);">
-                            <div class="mb-4">
-                                <h4 class="text-primary mb-2">Consulting</h4>
-                                <div class="d-flex justify-content-between">
-                                    <p class="mb-0"><span class="text-dark fw-bold">On</span> Mar 14, 2024</p>
-                                    <p class="mb-0"><span class="text-dark fw-bold">By</span> Mark D. Brock</p>
-                                </div>
-                            </div>
-                            <div class="project-img">
-                                <img src="img/blog-3.jpg" class="img-fluid w-100 rounded" alt="Image">
-                                <div class="blog-plus-icon">
-                                    <a href="img/blog-3.jpg" data-lightbox="blog-3" class="btn btn-primary btn-md-square rounded-pill"><i class="fas fa-plus fa-1x"></i></a>
-                                </div>
-                            </div>
-                            <div class="my-4">
-                                <a href="#" class="h4">Interested in Giving Back this year? Here are some tips</a>
-                            </div>
-                            <a class="btn btn-primary rounded-pill py-2 px-4" href="#">Explore More</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- Blog End -->
+        .hero .btn-outline-main {
+            color: white;
+            border-color: #64748b;
+        }
 
+        .hero .btn-outline-main:hover {
+            color: var(--ink);
+            background: white;
+            border-color: white;
+        }
 
-        
-
-               <!-- Testimonial Start -->
-               <div class="container-fluid testimonial bg-light py-5">
-                <div class="container py-5">
-                    <div class="row g-4 align-items-center">
-                        <div class="col-xl-4 wow fadeInLeft" data-wow-delay="0.1s">
-                            <div class="h-100 rounded">
-                                <h3 class="text-primary"> Feedbacks</h3>
-                                <h1 class="display-4 mb-4">Clients are Happy!!!</h1>
-                                <p class="mb-4">I’m glad that many of my clients have been satisfied with my services. Their positive feedback highlights my commitment to delivering personalized support and achieving proven results. As a dedicated professional, I prioritize understanding your unique needs and go the extra mile to ensure your success. With a focus on quality and client satisfaction, I am here to provide exceptional services that truly make a difference. <a href="contact.html">Contact me</a> for a transformative experience that exceeds your expectations!</p>
-                            </div>
-                        </div>
-                        <div class="col-xl-8">
-                            <div class="testimonial-carousel owl-carousel wow fadeInUp" data-wow-delay="0.1s">
-                                <div class="testimonial-item bg-white rounded p-4 wow fadeInUp" data-wow-delay="0.3s">
-                                    <div class="d-flex">
-                                        <div><i class="fas fa-quote-left fa-3x text-dark me-3"></i></div>
-                                        <p class="mt-4">I’m incredibly grateful for Isaac’s support during my final thesis project. His expertise and guidance helped me meet tight deadlines and achieve my academic goals. I highly recommend Isaac to anyone seeking reliable assistance with their studies. You won’t be disappointed!
-                                        </p>
-                                    </div>
-                                    <div class="d-flex justify-content-end">
-                                        <div class="my-auto text-end">
-                                            <h5>Beatrice Kwihsha</h5>
-                                            <p class="mb-0">Phd Student</p>
-                                        </div>
-                                        <div class="bg-white rounded-circle ms-3">
-                                            <img src="img/testimonial-1.jpg" class="rounded-circle p-2" style="width: 80px; height: 80px; border: 1px solid; border-color: var(--bs-primary);" alt="">
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="testimonial-item bg-white rounded p-4 wow fadeInUp" data-wow-delay="0.5s">
-                                    <div class="d-flex">
-                                        <div><i class="fas fa-quote-left fa-3x text-dark me-3"></i></div>
-                                        <p class="mt-4">I can’t thank Isaac enough for his help with my programming subjects and final system project. His insights and guidance were invaluable, leading me to achieve a first-class upper grade. I highly recommend Isaac to anyone needing expert assistance in computer science!
-                                        </p>
-                                    </div>
-                                    <div class="d-flex justify-content-end">
-                                        <div class="my-auto text-end">
-                                            <h5>Emmah Charlotte</h5>
-                                            <p class="mb-0">System Administrator</p>
-                                        </div>
-                                        <div class="bg-white rounded-circle ms-3">
-                                            <img src="img/testimonial-2.jpg" class="rounded-circle p-2" style="width: 80px; height: 80px; border: 1px solid; border-color: var(--bs-primary);" alt="">
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="testimonial-item bg-white rounded p-4 wow fadeInUp" data-wow-delay="0.5s">
-                                    <div class="d-flex">
-                                        <div><i class="fas fa-quote-left fa-3x text-dark me-3"></i></div>
-                                        <p class="mt-4">As a part-time student, balancing work and studies has been challenging, but Isaac has been a reliable lifesaver! His assistance with my assignments has been invaluable, allowing me to manage my time effectively. I highly recommend Isaac for anyone needing dependable support!
-                                        </p>
-                                    </div>
-                                    <div class="d-flex justify-content-end">
-                                        <div class="my-auto text-end">
-                                            <h5>Stephanie George</h5>
-                                            <p class="mb-0">Student</p>
-                                        </div>
-                                        <div class="bg-white rounded-circle ms-3">
-                                            <img src="img/testimonial-4.jpg" class="rounded-circle p-2" style="width: 80px; height: 80px; border: 1px solid; border-color: var(--bs-primary);" alt="">
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="testimonial-item bg-white rounded p-4 wow fadeInUp" data-wow-delay="0.7s">
-                                    <div class="d-flex">
-                                        <div><i class="fas fa-quote-left fa-3x text-dark me-3"></i></div>
-                                        <p class="mt-4">I am extremely grateful to Isaac for building my company’s website. His expertise and attention to detail created a professional platform that has significantly benefited my business. I highly recommend Isaac to anyone looking for top-notch web development services
-                                        </p>
-                                    </div>
-                                    <div class="d-flex justify-content-end">
-                                        <div class="my-auto text-end">
-                                            <h5>Theodore James</h5>
-                                            <p class="mb-0">Senior Advocate</p>
-                                        </div>
-                                        <div class="bg-white rounded-circle ms-3">
-                                            <img src="img/testimonial-3.jpg" class="rounded-circle p-2" style="width: 80px; height: 80px; border: 1px solid; border-color: var(--bs-primary);" alt="">
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!-- Testimonial End -->
-
-
-         <!-- FAQs Start -->
-         <div class="container-fluid faq py-5">
-            <div class="container py-5">
-                <div class="row g-5 align-items-center">
-                    <div class="col-lg-6 wow fadeInLeft" data-wow-delay="0.1s">
-                        <div class="pb-5">
-                            <h4 class="text-primary">FAQs</h4>
-                            <h1 class="display-4">Get the Answers to Common Questions</h1>
-                        </div>
-                       <div class="accordion bg-light rounded p-4" id="accordionExample">
-                            <div class="accordion-item border-0 mb-4">
-                                <h2 class="accordion-header" id="headingOne">
-                                    <button class="accordion-button text-dark fs-5 fw-bold rounded-top" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseTOne">
-                                        1. What services do you offer?
-                                    </button>
-                                </h2>
-                                <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
-                                    <div class="accordion-body my-2">
-                                        <h5>Wide Range of Solutions</h5>
-                                        <p>I offer a range of services, including academic assistance, programming support, and web development. Whether you need help with assignments, guidance on projects, or a professional website for your business, I’m here to provide tailored solutions to meet your needs</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="accordion-item border-0 mb-4">
-                                <h2 class="accordion-header" id="headingTwo">
-                                    <button class="accordion-button collapsed text-dark fs-5 fw-bold rounded-top" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                                        2. How do you ensure the quality of your work?
-                                    </button>
-                                </h2>
-                                <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
-                                    <div class="accordion-body my-2">
-                                        <h5>Commitment to Excellence</h5>
-                                        <p>I prioritize quality by maintaining a high standard in all my services. Each project is approached with thorough research, attention to detail, and a commitment to meeting deadlines. I value client feedback and continuously improve my processes to ensure the best results for every client.</p>                                    </div>
-                                </div>
-                            </div>
-                            <div class="accordion-item border-0 mb-4">
-                                <h2 class="accordion-header" id="headingThree">
-                                    <button class="accordion-button collapsed text-dark fs-5 fw-bold rounded-top" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                                        4. Can you provide testimonials from previous clients?
-                                    </button>
-                                </h2>
-                                <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
-                                    <div class="accordion-body my-2">
-                                        <h5>Real Experiences, Real Success
-                                        </h5>
-                                        <p>Absolutely! I have received positive feedback from various clients who have benefited from my services. Testimonials are available on my website, showcasing how I’ve helped students achieve academic success and assisted businesses with web development. Feel free to read their experiences for insights!
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="accordion-item border-0 mb-0">
-                                <h2 class="accordion-header" id="headingFour">
-                                    <button class="accordion-button collapsed text-dark fs-5 fw-bold rounded-top" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
-                                        4. How do you charge for your services?
-                                    </button>
-                                </h2>
-                                <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordionExample">
-                                    <div class="accordion-body my-2">
-                                        <h5>Transparent Pricing Structure
-                                        </h5>
-                                        <p>My charges are based on the complexity and scope of the project. We agree on a fair price before starting, ensuring transparency and clarity regarding the payment structure. This way, you can be confident that you’re receiving quality service at a reasonable rate.
-
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                       </div>
-                    </div>
-                    <div class="col-lg-6 wow fadeInRight" data-wow-delay="0.3s">
-                        <div class="faq-img RotateMoveRight rounded">
-                            <img src="img/faq-img.jpg" class="img-fluid rounded w-100" alt="Image">
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- FAQs End -->
-
-        <!-- Footer Start -->
-        <div class="container-fluid footer py-5 wow fadeIn" data-wow-delay="0.2s">
-            <div class="container py-5">
-                <div class="row g-5">
-                    <div class="col-md-6 col-lg-6 col-xl-3">
-                        <div class="footer-item d-flex flex-column">
-                            <div class="footer-item">
-                                <h4 class="text-white mb-4">Newsletter</h4>
-                                <p class="mb-3">I’m excited to share the success stories from my recent clients, who have achieved incredible results through my services. From academic support to professional web development, I’m dedicated to helping you reach your goals. Let’s work together and create success tailored specifically for you. Reach out today!
-                                </p>
-                            
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6 col-lg-6 col-xl-3">
-                        <div class="footer-item d-flex flex-column">
-                            <h4 class="text-white mb-4">Explore</h4>
-                            <a href="index.html"><i class="fas fa-angle-right me-2"></i> Home</a>
-                            <a href="service.html"><i class="fas fa-angle-right me-2"></i> Services</a>
-                            <a href="about.html"><i class="fas fa-angle-right me-2"></i> About Me</a>
-                            <a href="#"><i class="fas fa-angle-right me-2"></i> Latest Projects</a>
-                            <a href="testimonial.html"><i class="fas fa-angle-right me-2"></i> Testimonial</a>
-                            <a href="contact.html"><i class="fas fa-angle-right me-2"></i> Contact Me</a>
-                        </div>
-                    </div>
-                    <div class="col-md-6 col-lg-6 col-xl-3">
-                        <div class="footer-item d-flex flex-column">
-                            <h4 class="text-white mb-4">Contact Info</h4>
-                            <a href=""><i class="fa fa-map-marker-alt me-2"></i> 40200 Nairobi, Kenya</a>
-                            <a href=""><i class="fas fa-envelope me-2"></i> sagntechsolutions@outlook.com</a>
-                            <a href=""><i class="fas fa-envelope me-2"></i> isaacsagni@outlook.com</a>
-                            <a href=""><i class="fas fa-phone me-2"></i> +245704827257</a>
-                            <a href="" class="mb-3"><i class="fas fa-print me-2"></i> +254115491386</a>
-                            <div class="d-flex align-items-center">
-                                <a class="btn btn-light btn-md-square me-2" href="https://www.facebook.com/brian.isaac.7547" target="_blank">
-                                    <i class="fab fa-facebook-f"></i>
-                                </a>
-                                <a class="btn btn-light btn-md-square me-2" href="https://x.com/sagini17?t=M5DrH4OIqUUB_RFzk6wMEQ&s=08" target="_blank">
-                                    <i class="fab fa-twitter"></i>
-                                </a>
-                                <a class="btn btn-light btn-md-square me-2" href="https://t.me/sagnibrian" target="_blank">
-                                    <i class="fab fa-instagram"></i>
-                                </a>
-                                <a class="btn btn-light btn-md-square me-0" href="https://www.linkedin.com/in/isaac-sagini-9318072b8" target="_blank">
-                                    <i class="fab fa-linkedin-in"></i>
-                                </a>
-                                <a class="btn btn-light btn-md-square me-0" href="https://t.me/Isaacsagin" target="_blank">
-                                    <i class="fab fa-telegram-plane"></i>
-                                </a>
-                                
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6 col-lg-6 col-xl-3">
-                        <div class="footer-item-post d-flex flex-column">
-                            <h4 class="text-white mb-4">Popular Post</h4>
-                            <div class="d-flex flex-column mb-3">
-                                <p class="text-uppercase text-primary mb-2">For you!</p>
-                                <p class="text-body">I’m excited to offer a special discount on personal website portfolios! Whether you're showcasing your skills, projects, or personal brand, this is your chance to have a professional portfolio at an unbeatable price. Get 20% off for a limited time—let’s create something that sets you apart! Contact me today!
-                                </div>
-                            
-                        
-                    
-                </div>
-            </div>
-        </div>
-        <!-- Footer End -->
-
-        
-        
-
-
-        <!-- Back to Top -->
-        <a href="#" class="btn btn-primary btn-lg-square back-to-top"><i class="fa fa-arrow-up"></i></a>   
-
-        
-    <!-- JavaScript Libraries -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="lib/wow/wow.min.js"></script>
-    <script src="lib/easing/easing.min.js"></script>
-    <script src="lib/waypoints/waypoints.min.js"></script>
-    <script src="lib/counterup/counterup.min.js"></script>
-    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
-    <script src="lib/lightbox/js/lightbox.min.js"></script>
-    
-
-    <!-- Template Javascript -->
-    <script src="js/main.js"></script>
-    </body>
-
-</html>
+        .hero-note {
+            margin-top: 28px
